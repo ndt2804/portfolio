@@ -21,7 +21,7 @@
         </div>
         <div
             class="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-            <Image src={deved} layout="fill" objectFit="cover" />
+            <!-- <Image src={deved} layout="fill" objectFit="cover" /> -->
         </div>
     </div>
     <section>
@@ -42,7 +42,7 @@
         </div>
         <div class="lg:flex gap-10">
             <div class="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-                <Image src={design} width={100} height={100} />
+                <!-- <Image src={design} width={100} height={100} /> -->
                 <h3 class="text-lg font-medium pt-8 pb-2  ">
                     Beautiful Designs
                 </h3>
@@ -57,7 +57,7 @@
                 <p class="text-gray-800 py-1">Indesign</p>
             </div>
             <div class="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-                <Image src={code} width={100} height={100} />
+                <!-- <Image src={code} width={100} height={100} /> -->
                 <h3 class="text-lg font-medium pt-8 pb-2 ">
                     Code your dream project
                 </h3>
@@ -72,7 +72,7 @@
                 <p class="text-gray-800 py-1">Indesign</p>
             </div>
             <div class="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-                <Image src={consulting} width={100} height={100} />
+                <!-- <Image src={consulting} width={100} height={100} /> -->
                 <h3 class="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
                 <p class="py-2">
                     Are you interested in feedback for your current project? I can
@@ -102,7 +102,7 @@
                 programming and teaching.
             </p>
         </div>
-        <div class="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+        <!-- <div class="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div class="basis-1/3 flex-1 ">
                 <Image class="rounded-lg object-cover" layout="responsive" src={web1} />
             </div>
@@ -121,7 +121,7 @@
             <div class="basis-1/3 flex-1">
                 <Image class="rounded-lg object-cover" layout="responsive" />
             </div>
-        </div>
+        </div> -->
     </section>
     <!-- <Swiper :height="300" :modules="[SwiperAutoplay, SwiperEffectCreative]" :slides-per-view="1" :loop="true"
         :effect="'creative'" :autoplay="{
