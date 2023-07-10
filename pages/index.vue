@@ -32,8 +32,6 @@
             </div>
             <div
                 class="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 ">
-                <!-- <img class="rotate-45 px-20  absolute inset-0 w-full h-full object-cover object-center"
-                    src="~/assets/background.png" height=100%><img> -->
                 <img class="rotate-45 py-20" src="~/assets/backgroung_1.png"><img>
                 <a class="bg-gradient-to-r from-cyan-500 text-1xl to-teal-500 text-white px-4 py-2 border-none rounded-md"
                     href="#">
@@ -42,11 +40,245 @@
             </div>
 
         </div>
-        <div class="items-center p-10 py-10">
-            <h3 class="text-3xl py-1 dark:text-white ">Tech Stacks</h3>
-            <h3 class="text-teal-40">Backend Developer</h3>
-            <h3 class="text-teal-40">Frontend Developer</h3>
+        <div class="p-10 py-10 ">
+            <h2 class="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white text-center text-teal-400">SKILLS</h2>
+            <div class="mt-12 grid grid-cols-4 ">
+                <div class="p-4 transition duration-200 hover:grayscale-0">
+                    <img src="~/assets/html-5.svg" loading="lazy" alt="client logo" width="200" height="200" />
+                </div>
+                <div class="p-4  transition ">
+                    <img src="~/assets/css-3.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
+                </div>
+                <div class="p-4 flex  transition duration-200 hover:grayscale-0">
+                    <img src="~/assets/dot-net.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
+                </div>
+                <div class="p-4  transition duration-200 hover:grayscale-0">
+                    <img src="~/assets/nodejs.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
+                </div>
+                <div class="p-4 flex  transition duration-200 hover:grayscale-0">
+                    <img src="~/assets/javascript.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
+                </div>
+                <div class="p-4  transition duration-200 hover:grayscale-0">
+                    <img src="~/assets/vue.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
+                </div>
 
+                <div class="p-4  transition duration-200 hover:grayscale-0">
+                    <img src="~/assets/react.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
+                </div>
+                <div class="p-4  transition duration-200 hover:grayscale-0">
+                    <img src="~/assets/github.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
+                </div>
+            </div>
+        </div>
+
+        <div class="items-center p-10 py-10">
+            <div class="mb-12 space-y-2 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white text-teal-400">Project</h2>
+                <p class="lg:mx-auto lg:w-6/12 text-gray-600 dark:text-gray-300">
+                    Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia
+                    aliquid explicabo? Excepturi, voluptate?
+                </p>
+            </div>
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div
+                    class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+                    <div class="relative overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1661749711934-492cd19a25c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+                            alt="art cover" loading="lazy" width="1000" height="667"
+                            class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105" />
+                    </div>
+                    <div class="mt-6 relative">
+                        <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
+                            De fuga fugiat lorem ispum laboriosam expedita.
+                        </h3>
+                        <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
+                            Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
+                        </p>
+                        <a class="inline-block" href="#">
+                            <span class="text-info dark:text-blue-300">Read more</span>
+                        </a>
+                    </div>
+
+                </div>
+                <div
+                    class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+                    <div class="relative overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+                            alt="art cover" loading="lazy" width="1000" height="667"
+                            class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105" />
+                    </div>
+                    <div class="mt-6 relative">
+                        <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
+                            De fuga fugiat lorem ispum laboriosam expedita.
+                        </h3>
+                        <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
+                            Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
+                        </p>
+                        <a class="inline-block" href="#">
+                            <span class="text-info dark:text-blue-300">Read more</span>
+                        </a>
+                    </div>
+
+                </div>
+                <div
+                    class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+                    <div class="relative overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
+                            alt="art cover" loading="lazy" width="1000" height="667"
+                            class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105" />
+                    </div>
+                    <div class="mt-6 relative">
+                        <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
+                            De fuga fugiat lorem ispum laboriosam expedita.
+                        </h3>
+                        <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
+                            Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
+                        </p>
+                        <a class="inline-block" href="#">
+                            <span class="text-info dark:text-blue-300">Read more</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+        <div>
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="w-6 h-6 text-secondary text-rose-400 items-center">
+                        <path fill-rule="evenodd"
+                            d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <h2 class="text-2xl font-bold dark:text-white md:text-4xl text-teal-400 text-center">
+                        Services
+                    </h2>
+
+                    <h3 class="text-gray-600 dark:text-gray-300 font-mono py-3 font-bold text-center">What can I do? I may
+                        not be
+                        professional but
+                        I
+                        will try to
+                        do everything in my power.</h3>
+                </div>
+                <div
+                    class="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
+                    <div
+                        class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                        <div class="relative space-y-8 py-12 p-8">
+                            <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" class="w-12" width="512"
+                                height="512" alt="burger illustration" />
+
+                            <div class="space-y-2">
+                                <h5
+                                    class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                    Backend Developer
+                                </h5>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                                </p>
+                            </div>
+                            <a href="#" class="flex items-center justify-between group-hover:text-secondary">
+                                <span class="text-sm">Read more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                                    <path fill-rule="evenodd"
+                                        d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                        <div class="relative space-y-8 py-12 p-8">
+                            <img src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png" class="w-12" width="512"
+                                height="512" alt="burger illustration" />
+
+                            <div class="space-y-2">
+                                <h5
+                                    class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                    Frotned Developer
+                                </h5>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                                </p>
+                            </div>
+                            <a href="#" class="flex items-center justify-between group-hover:text-secondary">
+                                <span class="text-sm">Read more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                                    <path fill-rule="evenodd"
+                                        d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                        <div class="relative space-y-8 py-12 p-8">
+                            <img src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png" class="w-12" width="512"
+                                height="512" alt="burger illustration" />
+
+                            <div class="space-y-2">
+                                <h5
+                                    class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                    Mobile Developer
+                                </h5>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                                </p>
+                            </div>
+                            <a href="#" class="flex items-center justify-between group-hover:text-secondary">
+                                <span class="text-sm">Read more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                                    <path fill-rule="evenodd"
+                                        d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="group relative bg-gray-50 dark:bg-gray-900 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                        <div
+                            class="relative space-y-8 py-12 p-8 transition duration-300 group-hover:bg-white dark:group-hover:bg-gray-800">
+                            <img src="https://cdn-icons-png.flaticon.com/512/4341/4341025.png" class="w-12" width="512"
+                                height="512" alt="burger illustration" />
+
+                            <div class="space-y-2">
+                                <h5
+                                    class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                    UI/UX Design
+                                </h5>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                                </p>
+                            </div>
+                            <a href="#" class="flex items-center justify-between group-hover:text-secondary">
+                                <span class="text-sm">Read more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                                    <path fill-rule="evenodd"
+                                        d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="items-center p-10 py-10">
@@ -83,83 +315,33 @@
 
         </div>
 
-        <div>
-            <h3 class="text-3xl py-1 dark:text-white ">Services</h3>
-            <p class="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                Since the beginning of my journey as a freelance designer and
-                developer, I've done remote work for
-                <span class="text-teal-500"> agencies </span>
-                consulted for <span class="text-teal-500">startups </span>
-                and collaborated with talanted people to create digital products
-                for both business and consumer use.
-            </p>
-            <p class="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                I offer from a wide range of services, including brand design,
-                programming and teaching.
-            </p>
+        <div class="items-center p-10 py-10">
+            <div class="p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 ">
+                <form class="flex flex-col">
+                    <label for="">Full Name</label>
+                    <input type="text" placeholder="Full Name"
+                        class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none ">
+                    <label for="">Phone Number</label>
+                    <input type="text" placeholder="Full Name"
+                        class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none ">
+                    <label for="">Email</label>
+                    <input type="text" placeholder="Full Name"
+                        class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none ">
+                    <label for="">Something</label>
+                    <input type="text" placeholder="Full Name"
+                        class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none ">
+
+                </form>
+                <a class="bg-gradient-to-r from-cyan-500 text-1xl to-teal-500 text-white px-4 py-2 border-none rounded-md"
+                    href="#">
+                    Submit
+                </a>
+
+
+            </div>
+
         </div>
-        <div class="lg:flex gap-10">
-            <div class="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-                <!-- <Image src={design} width={100} height={100} /> -->
-                <h3 class="text-lg font-medium pt-8 pb-2  ">
-                    Beautiful Designs
-                </h3>
-                <p class="py-2">
-                    Creating elegant designs suited for your needs following core
-                    design theory.
-                </p>
-                <h4 class="py-4 text-teal-600">Design Tools I Use</h4>
-                <p class="text-gray-800 py-1">Photoshop</p>
-                <p class="text-gray-800 py-1">Illustrator</p>
-                <p class="text-gray-800 py-1">Figma</p>
-                <p class="text-gray-800 py-1">Indesign</p>
-            </div>
-            <div class="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-                <!-- <Image src={code} width={100} height={100} /> -->
-                <h3 class="text-lg font-medium pt-8 pb-2 ">
-                    Code your dream project
-                </h3>
-                <p class="py-2">
-                    Do you have an idea for your next great website? Let's make it a
-                    reality.
-                </p>
-                <h4 class="py-4 text-teal-600">Design Tools I Use</h4>
-                <p class="text-gray-800 py-1">Photoshop</p>
-                <p class="text-gray-800 py-1">Illustrator</p>
-                <p class="text-gray-800 py-1">Figma</p>
-                <p class="text-gray-800 py-1">Indesign</p>
-            </div>
-            <div class="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-                <!-- <Image src={consulting} width={100} height={100} /> -->
-                <h3 class="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
-                <p class="py-2">
-                    Are you interested in feedback for your current project? I can
-                    give you tips and tricks to level it up.
-                </p>
-                <h4 class="py-4 text-teal-600">Design Tools I Use</h4>
-                <p class="text-gray-800 py-1">Photoshop</p>
-                <p class="text-gray-800 py-1">Illustrator</p>
-                <p class="text-gray-800 py-1">Figma</p>
-                <p class="text-gray-800 py-1">Indesign</p>
-            </div>
-        </div>
-        <section class="py-10">
-            <div>
-                <h3 class="text-3xl py-1 dark:text-white ">Portofolio</h3>
-                <p class="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                    Since the beginning of my journey as a freelance designer and
-                    developer, I've done remote work for
-                    <span class="text-teal-500"> agencies </span>
-                    consulted for <span class="text-teal-500">startups </span>
-                    and collaborated with talanted people to create digital products
-                    for both business and consumer use.
-                </p>
-                <p class="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                    I offer from a wide range of services, including brand design,
-                    programming and teaching.
-                </p>
-            </div>
-        </section>
+
         <div>
             <Swiper :height="300" :modules="[SwiperPagination]" :slides-per-view="1" :loop="true" :effect="'creative'"
                 :autoplay="{
@@ -275,5 +457,29 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.hover\:shadow-lg:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200px 0;
+    }
+
+    100% {
+        background-position: 200px 0;
+    }
+}
+
+.shimmer-effect {
+    animation: shimmer 1s infinite linear;
+    background: linear-gradient(to right, #f5f7fb 0%, #e8edf1 50%, #f5f7fb 100%);
+    background-size: 400px 100%;
 }
 </style>
