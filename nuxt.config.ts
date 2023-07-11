@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     'nuxt-headlessui',
     'nuxt-swiper',
 
+
   ],
   devServer: {
     port: 5555

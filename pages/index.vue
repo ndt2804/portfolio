@@ -24,14 +24,11 @@
                     learn and improve my skills.
                 </p>
                 <div class="code-frame text-white text-2xl p-4  rounded-lg mx-auto">
-
-                    <highlightjs class="" language="js" code="1  const services = [ 
-2     'web development'
-3  ] 
-4     if (you need) navigate('/contact')  
-5         else 
-6           'thanks to visit'" />
-
+                    <div>
+                        <pre>
+                          <code class="code-frame" v-html="highlightedCode" v-once></code>
+                        </pre>
+                    </div>
                 </div>
             </div>
             <div class="flex flex-col items-center ml-20">
@@ -58,19 +55,7 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <img class="w-1/2 mx-auto rounded-xl" src="~/assets/background_3.png" alt="Ảnh">
-                <button class="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md mt-4" href="#">
-                    Resume
-                </button> -->
             </div>
-
-
-
-
-
-
-
         </div>
         <div class="p-10 py-10 ">
             <h2 class="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white text-center text-teal-400">SKILLS
@@ -401,13 +386,44 @@
 </template>
 <script>
 
-// import required modules
-import 'highlight.js/lib/common';
-import hljsVuePlugin from "@highlightjs/vue-plugin";
+import hljs from 'highlight.js/lib/core';
+import javascript from 'highlight.js/lib/languages/javascript';
+import 'highlight.js/styles/default.css';
+import highlightjs from 'highlight.js';
+
+hljs.registerLanguage('javascript', javascript);
 
 export default {
     components: {
-        highlightjs: hljsVuePlugin.component
+        highlightjs,
+    },
+    computed: {
+        highlightedCode() {
+            const code = `
+1  const services = [ 
+2     'web development'
+3  ] 
+4     if (you need) navigate('/contact')  
+5         else 
+6           'thanks to visit'` ; // Thay thế đoạn mã của bạn ở đây với định dạng Markdown
+
+            return hljs.highlightAuto(code, ['javascript']).value;
+        },
+    },
+    head() {
+        return {
+            script: [
+                {
+                    src: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js',
+                },
+            ],
+            link: [
+                {
+                    rel: 'stylesheet',
+                    href: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css',
+                },
+            ],
+        };
     },
     data() {
         return {
