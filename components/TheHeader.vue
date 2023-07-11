@@ -1,20 +1,25 @@
 <template>
-    <div class="container text-neutral-800 mx-auto px-6">
+    <div class="relative container text-neutral-800 mx-auto px-6 sticky top-0 bg-gray-50 ">
         <div class="flex justify-between dark:text-white">
             <div class=" flex items-center py-3 text-xl space-x-8 text-teal-500 ">
-                <h1 class="font-burtons font-bold">Haneko</h1>
+                <NuxtLink to="/">
+                    <h1 class="font-burtons font-bold">Haneko</h1>
+                </NuxtLink>
             </div>
             <div class="flex flex-row max-w-screen-xl px-6 mx-auto py-3 space-x-4 xl:space-x-8 h-20">
                 <ul class=" gap-3 flex flex-1 justify-center space-x-4 items-center">
-                    <NuxtLink to="#home">
+                    <NuxtLink to="/">
                         Home
+                    </NuxtLink>
+                    <NuxtLink to="#project">
+                        Project
+                    </NuxtLink>
+
+                    <NuxtLink to="#services">
+                        Services
                     </NuxtLink>
                     <NuxtLink to="#about">
                         About
-                    </NuxtLink>
-
-                    <NuxtLink to="#service">
-                        Services
                     </NuxtLink>
                     <NuxtLink to="#contact">
                         Contact
@@ -30,7 +35,8 @@
                     </Switch>
                 </li>
                 <li>
-                    <a class="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                    <a dowload='computer'
+                        class="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
                         href="#">
                         Resume
                     </a>

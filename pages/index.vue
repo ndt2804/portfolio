@@ -1,6 +1,6 @@
 <template>
-    <div class="container mx-auto scroll-smooth">
-        <div class=" flex items-center p-10 py-10">
+    <div class="container mx-auto scroll-smooth ">
+        <div id="/" class=" flex items-center p-10 py-10">
             <div class="text-5xl py-2 font-mono  ">
                 <div class="m-0 inline-flex items-baseline font-bold text-7xl "><svg stroke="currentColor"
                         fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
@@ -17,31 +17,64 @@
                     Web Developer
                 </h3>
                 <p class="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl md:text-xl">
-                    I'm a software developer with a solid knowledge of NodeJS, JavaScript and Typescript. I have ability to
+                    I'm a software developer with a solid knowledge of NodeJS, JavaScript and Typescript. I have ability
+                    to
                     learn and apply new technology quickly.
                     With my creativity, technical skills, I am looking to work in a professional environment where I can
                     learn and improve my skills.
                 </p>
-                <div class="code-frame">
-                    <pre class="text-white p-4 rounded-lg">
-                      <code>
-                        <!-- Mã code của bạn -->
-                      </code>
-                    </pre>
+                <div class="code-frame text-white text-2xl p-4  rounded-lg mx-auto">
+
+                    <highlightjs class="" language="js" code="1  const services = [ 
+2     'web development'
+3  ] 
+4     if (you need) navigate('/contact')  
+5         else 
+6           'thanks to visit'" />
+
                 </div>
             </div>
-            <div
-                class="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 ">
-                <img class="rotate-45 py-20" src="~/assets/backgroung_1.png"><img>
-                <a class="bg-gradient-to-r from-cyan-500 text-1xl to-teal-500 text-white px-4 py-2 border-none rounded-md"
-                    href="#">
+            <div class="flex flex-col items-center ml-20">
+                <div class=" flex items-center justify-center px-16">
+                    <div class="relative w-full max-w-lg">
+                        <div
+                            class="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob">
+                        </div>
+                        <div
+                            class="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000">
+                        </div>
+                        <div
+                            class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000">
+                        </div>
+                        <div class="m-8 relative space-y-4">
+                            <img class="mx-auto rounded-3xl" src="~/assets/background_3.png" alt="Ảnh">
+
+                            <button @click="downloadResume"
+                                class="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md mx-auto  flex items-center justify-center"
+                                href="#">
+                                Resume
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <img class="w-1/2 mx-auto rounded-xl" src="~/assets/background_3.png" alt="Ảnh">
+                <button class="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md mt-4" href="#">
                     Resume
-                </a>
+                </button> -->
             </div>
+
+
+
+
+
+
 
         </div>
         <div class="p-10 py-10 ">
-            <h2 class="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white text-center text-teal-400">SKILLS</h2>
+            <h2 class="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white text-center text-teal-400">SKILLS
+            </h2>
             <div class="mt-12 grid grid-cols-4 ">
                 <div class="p-4 transition duration-200 hover:grayscale-0">
                     <img src="~/assets/html-5.svg" loading="lazy" alt="client logo" width="200" height="200" />
@@ -63,7 +96,7 @@
                 </div>
 
                 <div class="p-4  transition duration-200 hover:grayscale-0">
-                    <img src="~/assets/react.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
+                    <img src="~/assets/nuxt.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
                 </div>
                 <div class="p-4  transition duration-200 hover:grayscale-0">
                     <img src="~/assets/github.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
@@ -71,30 +104,28 @@
             </div>
         </div>
 
-        <div class="items-center p-10 py-10">
+        <div id="project" class="items-center p-10 py-10">
             <div class="mb-12 space-y-2 text-center">
                 <h2 class="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white text-teal-400">Project</h2>
-                <p class="lg:mx-auto lg:w-6/12 text-gray-600 dark:text-gray-300">
-                    Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia
-                    aliquid explicabo? Excepturi, voluptate?
+                <p class="lg:mx-auto lg:w-6/12 text-gray-600 dark:text-gray-300 font-mono font-bold">
+                    Here are a few projects I've done for my personal hobby, you can check them out
                 </p>
             </div>
             <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 <div
                     class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
                     <div class="relative overflow-hidden rounded-xl">
-                        <img src="https://images.unsplash.com/photo-1661749711934-492cd19a25c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
-                            alt="art cover" loading="lazy" width="1000" height="667"
+                        <img src="~/assets/animetv.png" alt="art cover" loading="lazy" width="1000" height="667"
                             class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105" />
                     </div>
                     <div class="mt-6 relative">
                         <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
-                            De fuga fugiat lorem ispum laboriosam expedita.
+                            AnimuTV With Handlebars
                         </h3>
                         <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
-                            Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
+                            A Project i built for project in my school
                         </p>
-                        <a class="inline-block" href="#">
+                        <a class="inline-block" href="https://github.com/ndt2804/anime-nodejs-hbs">
                             <span class="text-info dark:text-blue-300">Read more</span>
                         </a>
                     </div>
@@ -141,17 +172,10 @@
 
                 </div>
             </div>
-
-
-
-
-
-
-
         </div>
 
         <div>
-            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+            <div id="services" class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
                 <div class="">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                         class="w-6 h-6 text-secondary text-rose-400 items-center">
@@ -163,7 +187,8 @@
                         Services
                     </h2>
 
-                    <h3 class="text-gray-600 dark:text-gray-300 font-mono py-3 font-bold text-center">What can I do? I may
+                    <h3 class="text-gray-600 dark:text-gray-300 font-mono py-3 font-bold text-center">What can I do? I
+                        may
                         not be
                         professional but
                         I
@@ -282,15 +307,33 @@
         </div>
 
         <div class="items-center p-10 py-10">
-            <h3 class="text-3xl py-1 dark:text-white ">About</h3>
-            <div class="flex   ">
-                <div
+
+            <div class="flex  mt-10 ">
+                <!-- <div
                     class="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 ">
-                    <!-- <img class="rotate-45 px-20  absolute inset-0 w-full h-full object-cover object-center"
-                src="~/assets/background.png" height=100%><img> -->
                     <img class="rotate-45 py-20" src="~/assets/backgroung_2.png"><img>
+                </div> -->
+                <div class="flex flex-col items-center ml-20">
+                    <div class=" flex items-center justify-center px-16">
+                        <div class="relative w-full max-w-lg">
+                            <div
+                                class="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob">
+                            </div>
+                            <div
+                                class="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000">
+                            </div>
+                            <div
+                                class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000">
+                            </div>
+                            <div class="m-8 relative space-y-4">
+                                <img class="mx-auto rounded-3xl		" src="~/assets/backgroung_2.png" alt="Ảnh">
+
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="text-5xl py-2 font-mono  ">
+                <div id="about" class="text-5xl py-2 font-mono  ">
                     <h3 class="text-3xl py-1 dark:text-white ">About Me</h3>
 
                     <h3 class="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl md:text-xl">
@@ -302,8 +345,10 @@
                     </h3>
                     <h3 class="text-3xl py-1 dark:text-white ">Hobbie</h3>
                     <h3 class="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl md:text-xl">
-                        I love photography and camping, I usually take it out twice a month to take pictures and go camping.
-                        In addition, I love reading books, because reading gives us a lot of knowledge outside of life that
+                        I love photography and camping, I usually take it out twice a month to take pictures and go
+                        camping.
+                        In addition, I love reading books, because reading gives us a lot of knowledge outside of life
+                        that
                         we have never experienced.
                     </h3>
                     <a class="bg-gradient-to-r from-cyan-500 text-1xl to-teal-500 text-white px-4 py-2 border-none rounded-md"
@@ -315,67 +360,55 @@
 
         </div>
 
-        <div class="items-center p-10 py-10">
-            <div class="p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 ">
-                <form class="flex flex-col">
-                    <label for="">Full Name</label>
-                    <input type="text" placeholder="Full Name"
-                        class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none ">
-                    <label for="">Phone Number</label>
-                    <input type="text" placeholder="Full Name"
-                        class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none ">
-                    <label for="">Email</label>
-                    <input type="text" placeholder="Full Name"
-                        class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none ">
-                    <label for="">Something</label>
-                    <input type="text" placeholder="Full Name"
-                        class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none ">
+        <div id="contact" class="items-center p-10 py-10 ">
+            <h2 class="text-2xl font-bold dark:text-white md:text-4xl text-teal-400 text-center">
+                Contact
+            </h2>
+
+            <h3 class="text-gray-600 dark:text-gray-300 font-mono py-3 font-bold text-center">Feel free contact me.</h3>
+            <div class="p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 font-mono w-1/3 items-center mx-auto">
+                <form class="flex flex-col space-y-4">
+                    <div class="grid grid-cols-2 gap-4 py-3 ">
+                        <div>
+                            <label for="" class="text-sm ">Full Name</label>
+                            <input type="text" placeholder="Full Name"
+                                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 mt-4">
+                        </div>
+                        <div>
+                            <label for="" class="text-sm">Phone Number</label>
+                            <input type="text" placeholder="Phone Number"
+                                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 mt-4">
+                        </div>
+                    </div>
+                    <label for="" class="text-sm">Email</label>
+                    <input type="text" placeholder="Email yourself"
+                        class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300">
+                    <label for="" class="text-sm">Message</label>
+                    <textarea type="text" placeholder="What do you want to contact me for?"
+                        class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300"
+                        rows="5"></textarea>
+                    <button
+                        class="bg-teal-400 to-teal-500 text-white px-4 border-none rounded-md inline-blocks self-end rounded-lg px-6 py-2 uppercase text-sm"
+                        href="#">
+                        Submit
+                    </button>
 
                 </form>
-                <a class="bg-gradient-to-r from-cyan-500 text-1xl to-teal-500 text-white px-4 py-2 border-none rounded-md"
-                    href="#">
-                    Submit
-                </a>
-
 
             </div>
-
         </div>
-
-        <div>
-            <Swiper :height="300" :modules="[SwiperPagination]" :slides-per-view="1" :loop="true" :effect="'creative'"
-                :autoplay="{
-                    delay: 8000,
-                    disableOnInteraction: true,
-                }" :creative-effect="{
-    prev: {
-        shadow: false,
-        translate: ['-20%', 0, -1],
-    },
-    next: {
-        translate: ['100%', 0, 0],
-    },
-}">
-                <swiper-slide>Slide 1</swiper-slide>
-                <swiper-slide>Slide 2</swiper-slide>
-                <swiper-slide>Slide 3</swiper-slide>
-                <swiper-slide>Slide 4</swiper-slide>
-                <swiper-slide>Slide 5</swiper-slide>
-                <swiper-slide>Slide 6</swiper-slide>
-                <swiper-slide>Slide 7</swiper-slide>
-                <swiper-slide>Slide 8</swiper-slide>
-                <swiper-slide>Slide 9</swiper-slide>
-            </Swiper>
-        </div>
-
     </div>
 </template>
 <script>
 
 // import required modules
+import 'highlight.js/lib/common';
+import hljsVuePlugin from "@highlightjs/vue-plugin";
 
 export default {
-
+    components: {
+        highlightjs: hljsVuePlugin.component
+    },
     data() {
         return {
             text: 'Haneko',
@@ -388,6 +421,17 @@ export default {
         this.startTyping();
     },
     methods: {
+        downloadResume() {
+            var link = document.createElement('a');
+            link.href = '~/assets/CV_NguyenDuyTan_BackendDev.pdf'; // Đường dẫn tới file PDF của bạn
+            link.target = '_blank';
+            link.download = 'CV_NguyenDuyTan.pdf'; // Tên file tải về
+
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        },
+
         startTyping() {
             const typewriter = document.getElementById('typewriter');
             typewriter.textContent = '';
@@ -481,5 +525,17 @@ export default {
     animation: shimmer 1s infinite linear;
     background: linear-gradient(to right, #f5f7fb 0%, #e8edf1 50%, #f5f7fb 100%);
     background-size: 400px 100%;
+}
+
+.hljs-number {
+    color: #475569;
+}
+
+.hljs-keyword {
+    color: #a5b4fc
+}
+
+.hljs-string {
+    color: #a3e635
 }
 </style>
