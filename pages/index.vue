@@ -32,59 +32,49 @@
                 </div>
             </div>
             <div class="flex flex-col items-center ml-20">
-                <div class=" flex items-center justify-center px-16">
-                    <div class="relative w-full max-w-lg">
-                        <div
-                            class="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob">
+                <div class=" flex items-center justify-center ">
+                    <div class="">
+                        <div class="mt-8 relative space-y-4">
+                            <img class="" src="~/assets//background/developer_gifs.gif" alt="Ảnh">
                         </div>
-                        <div
-                            class="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000">
-                        </div>
-                        <div
-                            class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000">
-                        </div>
-                        <div class="m-8 relative space-y-4">
-                            <img class="mx-auto rounded-3xl" src="~/assets/background_3.png" alt="Ảnh">
 
-                            <button @click="downloadResume"
-                                class="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md mx-auto  flex items-center justify-center"
-                                href="#">
-                                Resume
-                            </button>
-
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="p-10 py-10 ">
-            <h2 class="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white text-center text-teal-400">SKILLS
-            </h2>
+            <div class="mb-12 space-y-2 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white text-teal-400">Skills</h2>
+                <p class="lg:mx-auto lg:w-6/12 text-gray-600 dark:text-gray-300 font-mono font-bold">
+                    Below are a few skills I have been learning, I try to improve it every day to be better
+                </p>
+            </div>
             <div class="mt-12 grid grid-cols-4 ">
                 <div class="p-4 transition duration-200 hover:grayscale-0">
-                    <img src="~/assets/html-5.svg" loading="lazy" alt="client logo" width="200" height="200" />
+                    <img src="~/assets/tech/html-5.svg" loading="lazy" alt="client logo" width="200" height="200" />
                 </div>
                 <div class="p-4  transition ">
-                    <img src="~/assets/css-3.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
+                    <img src="~/assets/tech/css-3.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
                 </div>
                 <div class="p-4 flex  transition duration-200 hover:grayscale-0">
-                    <img src="~/assets/dot-net.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
+                    <img src="~/assets/tech/nuxt.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
                 </div>
                 <div class="p-4  transition duration-200 hover:grayscale-0">
-                    <img src="~/assets/nodejs.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
+                    <img src="~/assets/tech/nodejs.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
                 </div>
                 <div class="p-4 flex  transition duration-200 hover:grayscale-0">
-                    <img src="~/assets/javascript.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
+                    <img src="~/assets/tech/js.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
                 </div>
                 <div class="p-4  transition duration-200 hover:grayscale-0">
-                    <img src="~/assets/vue.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
+                    <img src="~/assets/tech/typescript.svg" class="" loading="lazy" alt="client logo" width="200"
+                        height="" />
                 </div>
 
                 <div class="p-4  transition duration-200 hover:grayscale-0">
-                    <img src="~/assets/nuxt.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
+                    <img src="~/assets/tech/vue.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
                 </div>
                 <div class="p-4  transition duration-200 hover:grayscale-0">
-                    <img src="~/assets/github.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
+                    <img src="~/assets/tech/github.svg" class="" loading="lazy" alt="client logo" width="200" height="" />
                 </div>
             </div>
         </div>
@@ -100,7 +90,7 @@
                 <div
                     class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
                     <div class="relative overflow-hidden rounded-xl">
-                        <img src="~/assets/animetv.png" alt="art cover" loading="lazy" width="1000" height="667"
+                        <img src="~/assets/project/animetv.png" alt="art cover" loading="lazy" width="1000" height="667"
                             class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105" />
                     </div>
                     <div class="mt-6 relative">
@@ -119,18 +109,17 @@
                 <div
                     class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
                     <div class="relative overflow-hidden rounded-xl">
-                        <img src="https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
-                            alt="art cover" loading="lazy" width="1000" height="667"
+                        <img src="~/assets/project/portfolio.png" alt="art cover" loading="lazy" width="1000" height="667"
                             class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105" />
                     </div>
                     <div class="mt-6 relative">
                         <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
-                            De fuga fugiat lorem ispum laboriosam expedita.
+                            Portfolio with NUXT 3.
                         </h3>
                         <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
-                            Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
+                            I built my portfolio with NUXT 3, Tailwindcss
                         </p>
-                        <a class="inline-block" href="#">
+                        <a class="inline-block" href="https://github.com/ndt2804/portfolio">
                             <span class="text-info dark:text-blue-300">Read more</span>
                         </a>
                     </div>
@@ -139,18 +128,17 @@
                 <div
                     class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
                     <div class="relative overflow-hidden rounded-xl">
-                        <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
-                            alt="art cover" loading="lazy" width="1000" height="667"
+                        <img src="~/assets/project/lilyours.png" alt="art cover" loading="lazy" width="1000" height="667"
                             class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105" />
                     </div>
                     <div class="mt-6 relative">
                         <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
-                            De fuga fugiat lorem ispum laboriosam expedita.
+                            Lily-Our With NUXT
                         </h3>
                         <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
-                            Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
+                            Project i built for my hobbies with Yuri
                         </p>
-                        <a class="inline-block" href="#">
+                        <a class="inline-block" href="https://github.com/ndt2804/yuri-yuri">
                             <span class="text-info dark:text-blue-300">Read more</span>
                         </a>
                     </div>
@@ -194,7 +182,7 @@
                                     Backend Developer
                                 </h5>
                                 <p class="text-gray-600 dark:text-gray-300">
-                                    Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                                    I can write api, create backend for any product with javascript, typescript
                                 </p>
                             </div>
                             <a href="#" class="flex items-center justify-between group-hover:text-secondary">
@@ -220,7 +208,7 @@
                                     Frotned Developer
                                 </h5>
                                 <p class="text-gray-600 dark:text-gray-300">
-                                    Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                                    I can built project frontend basic with vue and react
                                 </p>
                             </div>
                             <a href="#" class="flex items-center justify-between group-hover:text-secondary">
@@ -246,7 +234,7 @@
                                     Mobile Developer
                                 </h5>
                                 <p class="text-gray-600 dark:text-gray-300">
-                                    Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                                    I can built project Android App with Java
                                 </p>
                             </div>
                             <a href="#" class="flex items-center justify-between group-hover:text-secondary">
@@ -273,7 +261,7 @@
                                     UI/UX Design
                                 </h5>
                                 <p class="text-gray-600 dark:text-gray-300">
-                                    Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                                    I have basic experience with UI/UX
                                 </p>
                             </div>
                             <a href="#" class="flex items-center justify-between group-hover:text-secondary">
@@ -311,7 +299,7 @@
                                 class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000">
                             </div>
                             <div class="m-8 relative space-y-4">
-                                <img class="mx-auto rounded-3xl		" src="~/assets/backgroung_2.png" alt="Ảnh">
+                                <img class="mx-auto rounded-3xl		" src="~/assets/background/backgroung_2.png" alt="Ảnh">
 
 
                             </div>
@@ -344,42 +332,48 @@
             </div>
 
         </div>
-
         <div id="contact" class="items-center p-10 py-10 ">
-            <h2 class="text-2xl font-bold dark:text-white md:text-4xl text-teal-400 text-center">
-                Contact
-            </h2>
-
-            <h3 class="text-gray-600 dark:text-gray-300 font-mono py-3 font-bold text-center">Feel free contact me.</h3>
-            <div class="p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 font-mono w-1/3 items-center mx-auto">
-                <form class="flex flex-col space-y-4">
-                    <div class="grid grid-cols-2 gap-4 py-3 ">
-                        <div>
-                            <label for="" class="text-sm ">Full Name</label>
-                            <input type="text" placeholder="Full Name"
-                                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 mt-4">
+            <div
+                class="flex flex-col md:flex-row md:space-x-6 md:space-y-0 bg-teal-100 max-w-5xl p-8 rounded-xl shadow-lg  justify-between  items-center mx-auto">
+                <div class="flex flex-col justify-between">
+                    <h2 class="text-2xl font-bold dark:text-white md:text-4xl  text-center text-black">
+                        Contact
+                    </h2>
+                    <h3 class="text-gray-600 dark:text-gray-300 font-mono py-3 font-bold text-center">Feel free contact me.
+                    </h3>
+                    <img class="mx-auto rounded-3xl		" src="~/assets/contact.png" alt="Ảnh">
+                </div>
+                <div
+                    class="p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 font-mono w-1/3 items-center mx-auto w-full text-black">
+                    <form class="flex flex-col space-y-4">
+                        <div class="grid grid-cols-2 gap-4 py-3 ">
+                            <div>
+                                <label for="" class="text-sm ">Full Name</label>
+                                <input type="text" placeholder="Full Name"
+                                    class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 mt-4">
+                            </div>
+                            <div>
+                                <label for="" class="text-sm">Phone Number</label>
+                                <input type="text" placeholder="Phone Number"
+                                    class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 mt-4">
+                            </div>
                         </div>
-                        <div>
-                            <label for="" class="text-sm">Phone Number</label>
-                            <input type="text" placeholder="Phone Number"
-                                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 mt-4">
-                        </div>
-                    </div>
-                    <label for="" class="text-sm">Email</label>
-                    <input type="text" placeholder="Email yourself"
-                        class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300">
-                    <label for="" class="text-sm">Message</label>
-                    <textarea type="text" placeholder="What do you want to contact me for?"
-                        class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300"
-                        rows="5"></textarea>
-                    <button
-                        class="bg-teal-400 to-teal-500 text-white px-4 border-none rounded-md inline-blocks self-end rounded-lg px-6 py-2 uppercase text-sm"
-                        href="#">
-                        Submit
-                    </button>
+                        <label for="" class="text-sm">Email</label>
+                        <input type="text" placeholder="Email yourself"
+                            class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300">
+                        <label for="" class="text-sm">Message</label>
+                        <textarea type="text" placeholder="What do you want to contact me for?"
+                            class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300"
+                            rows="5"></textarea>
+                        <button
+                            class="bg-teal-400 to-teal-500 text-white px-4 border-none rounded-md inline-blocks self-end rounded-lg px-6 py-2 uppercase text-sm"
+                            href="#">
+                            Submit
+                        </button>
 
-                </form>
+                    </form>
 
+                </div>
             </div>
         </div>
     </div>

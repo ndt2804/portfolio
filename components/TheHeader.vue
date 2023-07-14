@@ -1,6 +1,6 @@
 <template>
-    <div class="relative container text-neutral-800 mx-auto px-6 sticky top-0 bg-gray-50 ">
-        <div class="flex justify-between dark:text-white">
+    <div class="relative  text-neutral-800 mx-auto px-6 sticky top-0 bg-gray-50 z-10 scroll-smooth ">
+        <div class=" container flex justify-between dark:text-white mx-auto">
             <div class=" flex items-center py-3 text-xl space-x-8 text-teal-500 ">
                 <NuxtLink to="/">
                     <h1 class="font-burtons font-bold">Haneko</h1>
@@ -14,7 +14,6 @@
                     <NuxtLink to="#project">
                         Project
                     </NuxtLink>
-
                     <NuxtLink to="#services">
                         Services
                     </NuxtLink>
