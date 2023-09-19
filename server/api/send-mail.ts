@@ -1,27 +1,69 @@
-import nodemailer from 'nodemailer';
+// const nodemailer = require('nodemailer');
+// const validator = require('validator');
+// const config = useRuntimeConfig();
 
-export default defineEventHandler(async (event) => {
-    const body = await readBody(event);
+// const transporter = nodemailer.createTransport({
+//     host: config.MAILHOST,
+//     port: config.MAILPORT,
+//     auth: {
+//         user: config.MAILUSER,
+//         pass: config.MAILPASSWORD,
+//     },
+// });
 
-    const testAccount = await nodemailer.createTestAccount();
+// export default defineEventHandler(async (event) => {
+//     try {
+//         const body = await readBody(event);
 
-    const transporter = nodemailer.createTransport({
-        host: process.env.HOST || 'smtp.ethereal.email',
-        port: 587,
-        secure: false,
-        auth: {
-            user: testAccount.user,
-            pass: testAccount.pass,
-        },
-    });
+//         await isValid(body)
+//             .then(async (data) => {
+//                 const mail = await transporter.sendMail({
+//                     form: `"${data.name}" <${data.email}>`,
+//                     to: config.CONTACTMAIL,
+//                     subject: data.subject,
+//                     text: data.message,
+//                     html: data.message,
+//                 });
 
-    const options = {
-        from: 'you@example.com',
-        to: 'user@gmail.com',
-        subject: 'hello world',
-        html: body.template,
-    };
+//                 console.log('Message sent: %s', mail.messageId);
+//                 console.log('Preview URL: %s', nodemailer.getTestMessageUrl(mail));
+//                 return Promise.resolve();
+//             })
+//             .catch((errors) => {
+//                 return Promise.reject(errors);
+//             });
 
-    await transporter.sendMail(options);
-    return { message: 'Email sent' };
-});
+//         return 'Gesendet!';
+//     } catch (error) {
+//         sendError(event, createError({ statusCode: 400, statusMessage: error }));
+//     }
+// });
+
+// async function isValid(body) {
+//     const errors = [];
+
+//     if (validator.isEmpty(body.email || ''))
+//         errors.push({
+//             field: 'email',
+//             error: 'Field is required.',
+//         });
+//     if (validator.isEmpty(body.name || ''))
+//         errors.push({ field: 'name', error: 'Field is required.' });
+//     if (validator.isEmpty(body.subject || ''))
+//         errors.push({ field: 'subject', error: 'Field is required.' });
+//     if (validator.isEmpty(body.message || ''))
+//         errors.push({ field: 'message', error: 'Field is required.' });
+//     if (!validator.isEmail(body.email || ''))
+//         errors.push({ field: 'email', error: 'Field should be a valid email.' });
+
+//     if (errors.length > 0) {
+//         return Promise.reject(errors);
+//     } else {
+//         return Promise.resolve({
+//             email: validator.normalizeEmail(body.email),
+//             subject: validator.escape(body.subject),
+//             name: validator.escape(body.name),
+//             message: validator.escape(body.message),
+//         });
+//     }
+// }
