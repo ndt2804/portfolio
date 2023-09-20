@@ -47,7 +47,7 @@
         <div
             class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
             <div class="relative overflow-hidden rounded-xl">
-                <img src="~/assets/project/lilyours.png" alt="art cover" loading="lazy" width="1000" height="667"
+                <img src="~/assets/project/lili-ours.png" alt="art cover" loading="lazy" width="1000" height="667"
                     class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105" />
             </div>
             <div class="mt-6 relative">
