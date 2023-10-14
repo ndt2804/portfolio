@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Source+Code+Pro');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#custom-logo {
+    font-family: 'Reenie Beanie', cursive;
+}
+
+#text-body {
+    font-family: 'Montserrat', 'sans-serif';
+}

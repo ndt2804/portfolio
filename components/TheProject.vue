@@ -1,6 +1,13 @@
 <template>
     <div class="mb-12 space-y-2 text-center">
-        <h2 class="text-3xl font-bold  md:text-4xl dark:text-white text-teal-400">Project</h2>
+        <div class="transition-all motion-reduce:transition-none duration-500 opacity-1 blur-0 text-center">
+            <div>
+                <div
+                    class=" items-center space-x-2 py-4 md:py-1 drop-shadow-lg bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent">
+                    <p class="text-4xl md:text-5xl" id="custom-logo">Project</p>
+                </div>
+            </div>
+        </div>
         <p class="lg:mx-auto lg:w-6/12 text-gray-600 dark:text-gray-300 font-mono font-bold">
             Here are a few projects I've done for my personal hobby, you can check them out
         </p>

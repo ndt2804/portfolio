@@ -74,20 +74,24 @@ export default {
 </script>
 <template>
     <div class="text-5xl py-2 font-mono  ">
-        <div class="m-0 inline-flex items-baseline font-bold text-7xl "><svg stroke="currentColor" fill="currentColor"
-                stroke-width="0" viewBox="0 0 512 512" class="hidden shrink-0 grow-0 self-center text-omega-500 md:block"
-                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <path fill="none" stroke-linecap="square" stroke-miterlimit="10" stroke-width="48"
-                    d="M184 112l144 144-144 144">
-                </path>
-            </svg>
-            <span id="typewriter" class="animate-typewriter overflow-hidden whitespace-nowrap text-teal-400">{{
-                text }}</span>
-            <div class="ml-2 -translate-y-2 animate-blink">_</div>
+        <div
+            class="m-0 inline-flex items-baseline font-bold text-7xl bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent ">
+            <p>&gt;</p>
+            <span id="typewriter"
+                class=" items-center space-x-2 py-4 md:py-1 drop-shadow-lg bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent">
+                <p class="py-2 text-4xl md:text-5xl"> {{
+                    text }}</p>
+            </span>
+            <div
+                class="ml-2 -translate-y-2 animate-blink bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent">
+                _</div>
         </div>
-        <h3 class="text-2xl py-2 dark:text-white md:text-3xl">
-            Web Developer
-        </h3>
+        <div class="transition-all motion-reduce:transition-none duration-500 opacity-1 blur-0">
+            <div
+                class=" items-center space-x-2 py-4 md:py-1 drop-shadow-lg bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent">
+                <p class="py-2 text-4xl md:text-5xl" id="custom-logo"> Web Developer</p>
+            </div>
+        </div>
         <p class="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl md:text-xl">
             Hello, I'm Nguyen Duy Tan. I'm a software developer with a solid knowledge of NodeJS, JavaScript and Typescript.
             I

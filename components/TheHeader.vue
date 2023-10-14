@@ -1,13 +1,22 @@
 <template>
     <div class="  text-neutral-800 mx-auto px-6 sticky top-0 bg-gray-50 dark:bg-slate-800 z-10 scroll-smooth ">
         <div class=" container flex justify-between dark:text-white mx-auto">
-            <div class=" flex items-center py-3 text-xl space-x-8 text-teal-500 ">
-                <NuxtLink to="/">
-                    <h1 class="font-burtons font-bold">Haneko</h1>
-                </NuxtLink>
+            <div class=" flex items-center py-3 text-xl space-x-8 ">
+                <a aria-current="page" href="/" class="router-link-active router-link-exact-active">
+                    <div class="transition-all motion-reduce:transition-none duration-500 opacity-1 blur-0">
+                        <div>
+                            <div
+                                class="flex items-center space-x-2 py-4 md:py-1 drop-shadow-lg bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent">
+                                <p>&lt;</p>
+                                <p class="text-4xl md:text-5xl" id="custom-logo">Haneko</p>
+                                <p>/&gt;</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
             <div class="flex flex-row max-w-screen-xl px-6 mx-auto py-3 space-x-4 xl:space-x-8 h-20">
-                <ul class=" gap-3 flex flex-1 justify-center space-x-4 items-center">
+                <ul id="custom-logo" class=" gap-3 flex flex-1 justify-center space-x-4 items-center text-2xl">
                     <NuxtLink to="/">
                         Home
                     </NuxtLink>
@@ -41,10 +50,9 @@
                     </button>
                 </li>
                 <li>
-                    <a dowload='computer'
-                        class="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                        href="#">
-                        Resume
+                    <a dowload='computer' class="bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent space-x-2 md:py-1 drop-shadow-lg 
+                        px-4 py-2 border-none rounded-md ml-8" href="#">
+                        RESUME
                     </a>
                 </li>
             </ul>

@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     'nuxt-headlessui',
     'nuxt-swiper',
     '@nuxtjs/color-mode',
+    'nuxt-icon',
 
   ],
   devServer: {
