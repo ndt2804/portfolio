@@ -11,6 +11,10 @@ export default defineNuxtConfig({
     'nuxt-icon',
 
   ],
+  swiper: {
+    prefix: 'Swiper',
+    modules: ['navigation', 'pagination'],
+  },
   devServer: {
     port: 5555
   },

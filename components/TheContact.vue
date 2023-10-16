@@ -32,7 +32,7 @@
                 <textarea type="text" placeholder="What do you want to contact me for?"
                     class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300"
                     rows="5"></textarea>
-                <button
+                <button @click="sendEmail"
                     class="bg-teal-400 to-teal-500 text-white  border-none  inline-blocks self-end rounded-lg px-6 py-2 uppercase text-sm"
                     href="#">
                     Submit
@@ -43,3 +43,12 @@
         </div>
     </div>
 </template>
+<script>
+export default {
+    methods: {
+        sendEmail() {
+            window.location.href = 'mailto:nduytan.dev@gmail.com';
+        },
+    },
+};
+</script>

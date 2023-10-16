@@ -114,7 +114,7 @@ export default {
         <div class=" flex items-center justify-center ">
             <div class="">
                 <div class="mt-8 relative space-y-4">
-                    <img class="" src="~/assets//background/developer_gifs.gif" alt="Ảnh">
+                    <img class="" src="~/assets/background/front-end-development.gif" alt="Ảnh">
                 </div>
 
             </div>
