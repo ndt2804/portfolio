@@ -1,14 +1,14 @@
 <template>
     <div
-        class="flex flex-col md:flex-row md:space-x-6 md:space-y-0 bg-teal-100 max-w-5xl p-8 rounded-xl shadow-lg  justify-between  items-center mx-auto">
+        class="flex flex-col md:flex-row md:space-x-6 md:space-y-0 bg-gradient-to-r from-pink-600 to-violet-400 max-w-5xl p-8 rounded-xl shadow-lg  justify-between  items-center mx-auto">
         <div class="flex flex-col justify-between">
-            <h2 class="text-2xl font-bold dark:text-white md:text-4xl  text-center text-black">
+            <h2 class="text-2xl font-bold dark:text-white md:text-4xl  text-center text-white">
                 Contact
             </h2>
-            <h3 class="text-gray-600 dark:text-gray-300 font-mono py-3 font-bold text-center">Feel free contact me
+            <h3 class="text-white dark:text-gray-300 font-mono py-3 font-bold text-center">Feel free contact me
                 nduytan.dev@gmail.com
             </h3>
-            <img class="mx-auto rounded-3xl		" src="~/assets/contact.png" alt="Ảnh">
+            <img class="mx-auto rounded-3xl		" src="~/assets/background/contact.png" alt="Ảnh">
         </div>
         <div
             class="p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 font-mono  items-center mx-auto w-full text-black">

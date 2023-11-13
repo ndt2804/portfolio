@@ -1,5 +1,6 @@
 <template>
-    <div class="  text-neutral-800 mx-auto px-6 sticky top-0 bg-gray-50 dark:bg-slate-800 z-10 scroll-smooth ">
+    <div
+        class="  text-neutral-800 mx-auto px-6 sticky top-0 bg-gray-200 dark:bg-slate-800 z-10 scroll-smooth     border border-[#ffffff] left-0 right-0  bg-opacity-100">
         <div class=" container flex justify-between dark:text-white mx-auto">
             <div class=" flex items-center py-3 text-xl space-x-8 ">
                 <a aria-current="page" href="/" class="router-link-active router-link-exact-active">
@@ -8,32 +9,31 @@
                             <div
                                 class="flex items-center space-x-2 py-4 md:py-1 drop-shadow-lg bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent">
                                 <p>&lt;</p>
-                                <p class="text-4xl md:text-5xl" id="custom-logo">Haneko</p>
+                                <p class="font-semibold text-4xl md:text-5xl" id="custom-logo">Haneko</p>
                                 <p>/&gt;</p>
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="flex flex-row max-w-screen-xl px-6 mx-auto py-3 space-x-4 xl:space-x-8 h-20">
-                <ul id="custom-logo" class=" gap-3 flex flex-1 justify-center space-x-4 items-center text-2xl">
-                    <NuxtLink to="/">
-                        Home
-                    </NuxtLink>
-                    <NuxtLink to="#project">
-                        Project
-                    </NuxtLink>
-                    <NuxtLink to="#services">
-                        Services
-                    </NuxtLink>
-                    <NuxtLink to="#about">
-                        About
-                    </NuxtLink>
-                    <NuxtLink to="#contact">
-                        Contact
-                    </NuxtLink>
-                </ul>
+            <div class="menu hidden md:block md:w-auto">
+                <div
+                    class="flex flex-row max-w-screen-xl px-6 mx-auto py-3 space-x-4 xl:space-x-8 h-20    p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+                    <ul id="custom-logo"
+                        class="font-semibold  gap-3 flex flex-1 justify-center space-x-4 items-center text-2xl">
+                        <NuxtLink to="#project">
+                            Projects
+                        </NuxtLink>
+                        <NuxtLink to="#about">
+                            About
+                        </NuxtLink>
+                        <NuxtLink to="#contact">
+                            Contact
+                        </NuxtLink>
+                    </ul>
+                </div>
             </div>
+
             <ul class="flex items-center">
                 <li class=" cursor-pointer text-2xl">
                     <button class="ml-5" @click="setColorTheme($colorMode.preference == 'dark' ? 'light' : 'dark')">
@@ -49,12 +49,6 @@
                         </svg>
                     </button>
                 </li>
-                <li>
-                    <a dowload='computer' class="bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent space-x-2 md:py-1 drop-shadow-lg 
-                        px-4 py-2 border-none rounded-md ml-8" href="#">
-                        RESUME
-                    </a>
-                </li>
             </ul>
         </div>
     </div>
@@ -66,6 +60,7 @@ type Theme = 'light' | 'dark';
 const setColorTheme = (newTheme: Theme) => {
     useColorMode().preference = newTheme
 }
+
 </script>
 <style>
 body {

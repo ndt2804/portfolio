@@ -3,10 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
 #custom-logo {
     font-family: 'Reenie Beanie', cursive;
 }
-
 #text-body {
     font-family: 'Montserrat', 'sans-serif';
 }

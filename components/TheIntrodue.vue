@@ -1,160 +1,101 @@
+<template>
+    <div class="container mt-12 mx-auto px-12 py-4">
+        <section class="lg:py-16">
+            <div class="grid grid-cols-1 sm:grid-cols-12">
+                <div class="col-span-8 place-self-center text-center sm:text-left justify-self-start">
+                    <h1 class=" text-red-400 mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+                        <span class=" text-transparent bg-clip-text  bg-gradient-to-r from-pink-600 to-violet-400">
+                            Hello, I&apos;m
+                        </span>
+                        <br />
+                        <span :style="{ letterSpacing: showCursor ? '0' : '0.5em' }">{{ currentRole }}</span>
+                        <span v-if="showCursor" class="cursor">|</span>
+                    </h1>
+                    <p class="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+                        voluptatum.
+                    </p>
+                    <button href="/contact"
+                        class="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-violet-500 to-pink-500 hover:bg-slate-200 text-white">
+                        Hire Me
+                    </button>
+                    <button href="/"
+                        class="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-violet-500 to-pink-500 hover:bg-slate-800 text-white mt-3">
+                        <span class="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                            Download CV
+                        </span>
+                    </button>
+                </div>
+                <div class="col-span-4 place-self-center mt-4 lg:mt-0" style="opacity: 1; transform: none;">
+                    <div class="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+                        <img alt="hero image" width="300" height="300"
+                            class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            style="color:transparent" src="~/assets/background/hero_img.png">
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+</template>
+  
 <script>
-import hljs from 'highlight.js/lib/core';
-import javascript from 'highlight.js/lib/languages/javascript';
-import 'highlight.js/styles/default.css';
-import highlightjs from 'highlight.js';
-hljs.registerLanguage('javascript', javascript);
-
 export default {
-    components: {
-        highlightjs,
-    },
-    computed: {
-        highlightedCode() {
-            const code = `
-1  const services = [ 
-2     'web development'
-3  ] 
-4     if (you need) navigate('/contact')  
-5         else 
-6           'thanks to visit'` ; // Thay thế đoạn mã của bạn ở đây với định dạng Markdown
-
-            return hljs.highlightAuto(code, ['javascript']).value;
-        },
-    },
-    head() {
-        return {
-            script: [
-                {
-                    src: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js',
-                },
-            ],
-            link: [
-                {
-                    rel: 'stylesheet',
-                    href: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css',
-                },
-            ],
-        };
-    },
     data() {
         return {
-            text: 'Haneko',
-            textDefault: '',
-            delay: 200, // Thời gian delay giữa mỗi ký tự (ms)
-            currentIndex: 0
+            roles: ["Nguyen Duy Tan", "Web Developer", "Node Developer", "Vue Developer ", "Photographer"],
+            currentRole: "",
+            showCursor: true,
         };
     },
     mounted() {
-        this.startTyping();
+        this.rotateRoles(); // Bắt đầu xoay vai trò
     },
     methods: {
-        startTyping() {
-            const typewriter = document.getElementById('typewriter');
-            typewriter.textContent = '';
-            this.type(); // Chạy hiệu ứng chạy từng chữ
-            setInterval(this.resetTypewriter, 10000); // Đặt thời gian chạy lại sau 10 giây (10000 ms)
-        },
-        type() {
-            if (this.currentIndex < this.text.length) {
-                const typewriter = document.getElementById('typewriter');
-                typewriter.textContent += this.text.charAt(this.currentIndex);
-                this.currentIndex++;
-                setTimeout(this.type, this.delay);
+        async rotateRoles() {
+            while (true) {
+                for (let i = 0; i < this.roles.length; i++) {
+                    await this.typeRole(this.roles[i]);
+                    await this.pause(2000); // Đợi 2 giây
+                    await this.eraseRole();
+                }
             }
         },
-        resetTypewriter() {
-            const typewriter = document.getElementById('typewriter');
-            typewriter.textContent = ''; // Xóa nội dung trong thẻ <span>
-            this.currentIndex = 0; // Đặt lại chỉ số hiện tại
-            this.type(); // Chạy lại hiệu ứng chạy từng chữ
-        }
-    }
-}
+        async typeRole(role) {
+            for (let i = 0; i <= role.length; i++) {
+                this.currentRole = role.slice(0, i);
+                await this.pause(100); // Thời gian chờ giữa mỗi ký tự
+            }
+        },
+        async eraseRole() {
+            for (let i = this.currentRole.length; i >= 0; i--) {
+                this.currentRole = this.currentRole.slice(0, i);
+                await this.pause(50); // Thời gian chờ giữa mỗi ký tự xóa
+            }
+        },
+        pause(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        },
+    },
+};
 </script>
-<template>
-    <div class="text-5xl py-2 font-mono  ">
-        <div
-            class="m-0 inline-flex items-baseline font-bold text-7xl bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent ">
-            <p>&gt;</p>
-            <span id="typewriter"
-                class=" items-center space-x-2 py-4 md:py-1 drop-shadow-lg bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent">
-                <p class="py-2 text-4xl md:text-5xl"> {{
-                    text }}</p>
-            </span>
-            <div
-                class="ml-2 -translate-y-2 animate-blink bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent">
-                _</div>
-        </div>
-        <div class="transition-all motion-reduce:transition-none duration-500 opacity-1 blur-0">
-            <div
-                class=" items-center space-x-2 py-4 md:py-1 drop-shadow-lg bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent">
-                <p class="py-2 text-4xl md:text-5xl" id="custom-logo"> Web Developer</p>
-            </div>
-        </div>
-        <p class="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl md:text-xl">
-            Hello, I'm Nguyen Duy Tan. I'm a software developer with a solid knowledge of NodeJS, JavaScript and Typescript.
-            I
-            have ability
-            to
-            learn and apply new technology quickly.
-            With my creativity, technical skills, I am looking to work in a professional environment where I can
-            learn and improve my skills.
-        </p>
-        <div class="code-frame text-white text-2xl p-4  rounded-lg mx-auto">
-            <div>
-                <pre>
-          <code class="code-frame" v-html="highlightedCode" v-once></code>
-        </pre>
-            </div>
-        </div>
-    </div>
-
-    <div class="flex flex-col items-center ml-20">
-        <div class=" flex items-center justify-center ">
-            <div class="">
-                <div class="mt-8 relative space-y-4">
-                    <img class="" src="~/assets/background/front-end-development.gif" alt="Ảnh">
-                </div>
-
-            </div>
-        </div>
-    </div>
-</template>
-<style >
-@keyframes typing {
-    from {
-        width: 0;
-    }
-}
-
-.animate-typewriter {
-    animation: typing 2s steps(12, end);
+  
+<style scoped>
+.cursor {
+    animation: blink 0.7s infinite;
 }
 
 @keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
     50% {
         opacity: 0;
     }
 }
-
-.hljs-number {
-    color: #475569;
-}
-
-.hljs-keyword {
-    color: #a5b4fc
-}
-
-.hljs-string {
-    color: #a3e635
-}
-
-.code-frame {
-    background-color: #1a202c;
-}
-
-.animate-blink {
-    animation: blink 1s infinite;
-}
 </style>
+  
