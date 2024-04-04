@@ -1,6 +1,6 @@
 <template>
     <div class="container mt-12 mx-auto px-12 py-4">
-        <section class="lg:py-16">
+        <section class="lg:py-2">
             <div class="grid grid-cols-1 sm:grid-cols-12">
                 <div class="col-span-8 place-self-center text-center sm:text-left justify-self-start">
                     <h1 class=" text-red-400 mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
@@ -11,17 +11,16 @@
                         <span :style="{ letterSpacing: showCursor ? '0' : '0.5em' }">{{ currentRole }}</span>
                         <span v-if="showCursor" class="cursor">|</span>
                     </h1>
-                    <p class="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-                        voluptatum.
-                    </p>
+                    <h1 id="text-custom" class="leading-6 font-normal	text-2xl ">
+                        I design and code beautifully simple things, and I love what I do.
+                    </h1>  
                     <button href="/contact"
                         class="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-violet-500 to-pink-500 hover:bg-slate-200 text-white">
                         Hire Me
                     </button>
                     <button href="/"
                         class="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-violet-500 to-pink-500 hover:bg-slate-800 text-white mt-3">
-                        <span class="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                        <span class="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 ">
                             Download CV
                         </span>
                     </button>

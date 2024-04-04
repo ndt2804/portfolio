@@ -43,7 +43,8 @@ const tabs = [{
                     I'm a software developer with extensive experience in coding and software
                     development.I have experience
                     working with JavaScript, React, Redux, Node.js, Express,
-                    HTML, CSS, Docker and Git. I'm passionate about creating innovative solutions, and I'm dedicated to my
+                    HTML, CSS, Docker and Git. I'm passionate about creating innovative solutions, and I'm dedicated to
+                    my
                     craft. With my
                     creativity, technical skills, and attention to detail, I'm confident I can help you find the best
                     software solution for your needs. I am a quick learner and I am always
