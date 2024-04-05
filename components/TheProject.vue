@@ -80,7 +80,7 @@ const filteredProjects = computed(() =>
             <TheProjectTag @click="handleTagChange" name="Mobile" :isSelected="tag === 'Mobile'" />
 
         </div>
-        <ul class="grid md:grid-cols-3 gap-8 md:gap-12">
+        <ul class="grid md:grid-cols-3 gap-8 md:gap-12 border-red-100">
             <li v-for="(project, index) in filteredProjects" :key="index">
                 <TheProjectCard :title="project.title" :description="project.description" :imgUrl="project.image"
                     :gitUrl="project.gitUrl" :previewUrl="project.previewUrl" :key="project.id" />

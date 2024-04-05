@@ -11,7 +11,7 @@
                         <span :style="{ letterSpacing: showCursor ? '0' : '0.5em' }">{{ currentRole }}</span>
                         <span v-if="showCursor" class="cursor">|</span>
                     </h1>
-                    <h1 id="text-custom" class="leading-6 font-normal	text-2xl ">
+                    <h1 id="text-body" class="leading-6 font-normal	text-2xl ">
                         I design and code beautifully simple things, and I love what I do.
                     </h1>  
                     <button href="/contact"
