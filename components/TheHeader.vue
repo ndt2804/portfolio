@@ -1,29 +1,35 @@
 <template>
-    <div class="container mx-auto scroll-smooth">
-        <div class="flex justify-between px-6 ">
-            <div class="flex items-center py-4 ">
-                <a aria-current="page" href="/" class="router-link-active router-link-exact-active">
-                    <img  src="~/assets/background/logo.png" width="80" height="45" alt="Logo">
-
-                </a>
-            </div>
-            <div class="py-4">
-                <div class="px-6 py-3 space-x-4 xl:space-x-8 h-20    p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
-                    <button href="/contact" class="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-violet-500 to-pink-500 hover:bg-slate-800 text-white mt-3">
-                    <div class="block bg-white rounded-full px-5 py-2 ">  
-                            <span class=" text-red-400 mb-2 text-2xl sm:text-xl lg:text-xl lg:leading-snug font-extrabold">
-                                <span class=" text-custom text-transparent bg-clip-text  bg-gradient-to-r from-pink-600 to-violet-400">
-                                    Contact Me
-                                </span>
-                                <br />
-                            </span>
-                           
-                    </div>
-                </button>
-                </div>
-            </div>
-
-
+  <div class="container mx-auto scroll-smooth">
+    <div class="flex justify-between px-6">
+      <div class="flex items-center py-4">
+        <a
+          aria-current="page"
+          href="/"
+          class="router-link-active router-link-exact-active"
+        >
+          <img src="~/assets/background/logo.png" width="80" height="45"
+          alt="Logo"
+        </a>
+      </div>
+      <div class="py-6">
+        <div class="flex">
+          <button
+            class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400"
+          >
+            <span
+              class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+            >
+              Contact Me
+            </span>
+          </button>
+          <button
+            type="button"
+            class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+          >
+            Donate &#10084;
+          </button>
         </div>
+      </div>
     </div>
+  </div>
 </template>
