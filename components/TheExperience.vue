@@ -23,69 +23,113 @@
             class="flex-1 bg-white dark:bg-zinc-700 p-6 flex flex-col justify-between"
           >
             <div class="flex-1">
-              <p class="text-xl font-semibold text-zinc-900 dark:text-white">
+              <p
+                class="text-xl font-extrabold text-zinc-900 dark:text-white text-center"
+              >
                 Frontend Development
               </p>
-              <ul class="mt-6 grid gap-4">
+              <ul class="mt-6 grid grid-cols-2 gap-4">
                 <li class="flex items-center">
                   <Icon
                     name="icon-park-solid:success"
                     class="flex-shrink-0 mr-3"
+                    size="24"
                   />
-                  <span
-                    class="text-sm font-medium text-zinc-900 dark:text-white"
-                    >HTML - Experienced</span
-                  >
+                  <div class="pl-3">
+                    <span
+                      class="text-sm font-medium text-zinc-900 dark:text-white"
+                      >Javascript</span
+                    >
+                    <span
+                      class="flex text-sm font-medium text-zinc-500 dark:text-white"
+                      >Intermediate</span
+                    >
+                  </div>
                 </li>
                 <li class="flex items-center">
                   <Icon
                     name="icon-park-solid:success"
                     class="flex-shrink-0 mr-3"
+                    size="24"
                   />
-                  <span
-                    class="text-sm font-medium text-zinc-900 dark:text-white"
-                    >CSS - Experienced</span
-                  >
+                  <div class="pl-3">
+                    <span
+                      class="text-sm font-medium text-zinc-900 dark:text-white"
+                      >Typescript</span
+                    >
+                    <span
+                      class="flex text-sm font-medium text-zinc-500 dark:text-white"
+                      >Intermediate</span
+                    >
+                  </div>
                 </li>
                 <li class="flex items-center">
                   <Icon
                     name="icon-park-solid:success"
                     class="flex-shrink-0 mr-3"
+                    size="24"
                   />
-                  <span
-                    class="text-sm font-medium text-zinc-900 dark:text-white"
-                    >SASS - Intermediate</span
-                  >
+                  <div class="pl-3">
+                    <span
+                      class="text-sm font-medium text-zinc-900 dark:text-white"
+                      >HTML</span
+                    >
+                    <span
+                      class="flex text-sm font-medium text-zinc-500 dark:text-white"
+                      >Intermediate</span
+                    >
+                  </div>
                 </li>
                 <li class="flex items-center">
                   <Icon
                     name="icon-park-solid:success"
                     class="flex-shrink-0 mr-3"
+                    size="24"
                   />
-                  <span
-                    class="text-sm font-medium text-zinc-900 dark:text-white"
-                    >JavaScript - Basic</span
-                  >
+                  <div class="pl-3">
+                    <span
+                      class="text-sm font-medium text-zinc-900 dark:text-white"
+                      >CSS</span
+                    >
+                    <span
+                      class="flex text-sm font-medium text-zinc-500 dark:text-white"
+                      >Basic</span
+                    >
+                  </div>
                 </li>
                 <li class="flex items-center">
                   <Icon
                     name="icon-park-solid:success"
                     class="flex-shrink-0 mr-3"
+                    size="24"
                   />
-                  <span
-                    class="text-sm font-medium text-zinc-900 dark:text-white"
-                    >TypeScript - Basic</span
-                  >
+                  <div class="pl-3">
+                    <span
+                      class="text-sm font-medium text-zinc-900 dark:text-white"
+                      >Tailwindcss
+                    </span>
+                    <span
+                      class="flex text-sm font-medium text-zinc-500 dark:text-white"
+                      >Intermediate</span
+                    >
+                  </div>
                 </li>
                 <li class="flex items-center">
                   <Icon
                     name="icon-park-solid:success"
                     class="flex-shrink-0 mr-3"
+                    size="24"
                   />
-                  <span
-                    class="text-sm font-medium text-zinc-900 dark:text-white"
-                    >Material UI - Intermediate</span
-                  >
+                  <div class="pl-3">
+                    <span
+                      class="text-sm font-medium text-zinc-900 dark:text-white"
+                      >Nuxt UI</span
+                    >
+                    <span
+                      class="flex text-sm font-medium text-zinc-500 dark:text-white"
+                      >Basic</span
+                    >
+                  </div>
                 </li>
               </ul>
             </div>
@@ -98,57 +142,113 @@
             class="flex-1 bg-white dark:bg-zinc-700 p-6 flex flex-col justify-between"
           >
             <div class="flex-1">
-              <p class="text-xl font-semibold text-zinc-900 dark:text-white">
+              <p
+                class="text-xl font-extrabold text-zinc-900 dark:text-white text-center"
+              >
                 Backend Development
               </p>
-              <ul class="mt-6 grid gap-4">
+              <ul class="mt-6 grid grid-cols-2 gap-4">
                 <li class="flex items-center">
-                  <img
-                    src="https://placehold.co/20x20"
-                    alt=""
+                  <Icon
+                    name="icon-park-solid:success"
                     class="flex-shrink-0 mr-3"
-                    crossorigin="anonymous"
+                    size="24"
                   />
-                  <span
-                    class="text-sm font-medium text-zinc-900 dark:text-white"
-                    >PostgreSQL - Basic</span
-                  >
+                  <div class="pl-3">
+                    <span
+                      class="text-sm font-medium text-zinc-900 dark:text-white"
+                      >NodeJS</span
+                    >
+                    <span
+                      class="flex text-sm font-medium text-zinc-500 dark:text-white"
+                      >Intermediate</span
+                    >
+                  </div>
                 </li>
                 <li class="flex items-center">
-                  <img
-                    src="https://placehold.co/20x20"
-                    alt=""
+                  <Icon
+                    name="icon-park-solid:success"
                     class="flex-shrink-0 mr-3"
-                    crossorigin="anonymous"
+                    size="24"
                   />
-                  <span
-                    class="text-sm font-medium text-zinc-900 dark:text-white"
-                    >Node JS - Intermediate</span
-                  >
+                  <div class="pl-3">
+                    <span
+                      class="text-sm font-medium text-zinc-900 dark:text-white"
+                      >ExpressJS</span
+                    >
+                    <span
+                      class="flex text-sm font-medium text-zinc-500 dark:text-white"
+                      >Intermediate</span
+                    >
+                  </div>
                 </li>
                 <li class="flex items-center">
-                  <img
-                    src="https://placehold.co/20x20"
-                    alt=""
+                  <Icon
+                    name="icon-park-solid:success"
                     class="flex-shrink-0 mr-3"
-                    crossorigin="anonymous"
+                    size="24"
                   />
-                  <span
-                    class="text-sm font-medium text-zinc-900 dark:text-white"
-                    >Express JS - Intermediate</span
-                  >
+                  <div class="pl-3">
+                    <span
+                      class="text-sm font-medium text-zinc-900 dark:text-white"
+                      >Supabase</span
+                    >
+                    <span
+                      class="flex text-sm font-medium text-zinc-500 dark:text-white"
+                      >Basic</span
+                    >
+                  </div>
                 </li>
                 <li class="flex items-center">
-                  <img
-                    src="https://placehold.co/20x20"
-                    alt=""
+                  <Icon
+                    name="icon-park-solid:success"
                     class="flex-shrink-0 mr-3"
-                    crossorigin="anonymous"
+                    size="24"
                   />
-                  <span
-                    class="text-sm font-medium text-zinc-900 dark:text-white"
-                    >Git - Intermediate</span
-                  >
+                  <div class="pl-3">
+                    <span
+                      class="text-sm font-medium text-zinc-900 dark:text-white"
+                      >Mongodb</span
+                    >
+                    <span
+                      class="flex text-sm font-medium text-zinc-500 dark:text-white"
+                      >Intermediate</span
+                    >
+                  </div>
+                </li>
+                <li class="flex items-center">
+                  <Icon
+                    name="icon-park-solid:success"
+                    class="flex-shrink-0 mr-3"
+                    size="24"
+                  />
+                  <div class="pl-3">
+                    <span
+                      class="text-sm font-medium text-zinc-900 dark:text-white"
+                      >Docker</span
+                    >
+                    <span
+                      class="flex text-sm font-medium text-zinc-500 dark:text-white"
+                      >Basic</span
+                    >
+                  </div>
+                </li>
+                <li class="flex items-center">
+                  <Icon
+                    name="icon-park-solid:success"
+                    class="flex-shrink-0 mr-3"
+                    size="24"
+                  />
+                  <div class="pl-3">
+                    <span
+                      class="text-sm font-medium text-zinc-900 dark:text-white"
+                      >Git</span
+                    >
+                    <span
+                      class="flex text-sm font-medium text-zinc-500 dark:text-white"
+                      >Intermediate</span
+                    >
+                  </div>
                 </li>
               </ul>
             </div>
@@ -184,16 +284,11 @@
             <span
               class="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1"
             >
-              <svg
-                viewBox="0 0 48 48"
-                y="0px"
-                x="0px"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <path
-                  d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z"
-                  fill="#00acc1"
-                ></path>
+                  fill="#63E6BE"
+                  d="M356.9 64.3H280l-56 88.6-48-88.6H0L224 448 448 64.3h-91.1zm-301.2 32h53.8L224 294.5 338.4 96.3h53.8L224 384.5 55.7 96.3z"
+                />
               </svg>
             </span>
           </button>

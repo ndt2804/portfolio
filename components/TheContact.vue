@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col-2 md:flex-row md:space-x-6 md:space-y-0 max-w-5xl p-8 rounded-xl shadow-lg border-orange-200 justify-between items-center mx-auto p-12"
+    class="flex flex-col-2 md:flex-row md:space-x-6 md:space-y-0 max-w-5xl rounded-xl shadow-lg border-orange-200 justify-between items-center mx-auto p-12"
   >
     <div class="mx-auto">
       <div class="text-center p-4">
